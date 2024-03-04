@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+.main-section
+{	
+	font-size:0.9em;
+	width:100%;
+	margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+.section {
+	width:50%;
+	max-width:120px;
+	float:left;
+	overflow: hidden;
+	margin-bottom: 2px;
+	margin-right:1%;
+	border-radius:5px 5px 0px 0px;
+}
+.left-border{
+	height:2px;
+	width: 60%;
+	float:left;
+}
+.right-border{
+	color:red !important;
+	height:2px;
+	float:left;
+	width:40%;
+}
+.bottom-section{
+	text-align: right;
+	border-radius:0px 0px 5px 5px;
+}
+	</style>
+</head>
+<body>
+
+	<div class="main-section">
+	<center>
+
+   <asp:ContentPlaceHolder ID="ContentArea" runat="server">  
+
+
+
+       </asp:ContentPlaceHolder> 	       
+
+    </center>
+	</div>
+
+
+	</body>
+</html>

@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="officeoneAX.caish.net" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+		<title>POSPLUS CRM</title>
+        <link rel="shortcut icon" type="image/x-icon" href="<%= Page.ResolveClientUrl("~/fonts/favicon/favicon.ico")%>" href="img/">
+	    <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/fonts/font-awesome-4.7.0/css/font-awesome.min.css")%>">	 
+        <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/fonts/iconic/css/material-design-iconic-font.min.css")%>">       	        
+	    <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/css/default.css")%>">
+    	<link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/css/fonts.css")%>">
+        <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/css/form.css")%>">    	
+        <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/vendor/fab/css/kc.fab.css")%>"/>
+        <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/vendor/colorbox/css/colorbox.css")%>"/>
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<%= Page.ResolveClientUrl("~/css/materialize.css")%>"  media="screen,projection" />
+        
+		<style  type="text/css">
+			@media (min-width: 2048px) {
+				.header a {
+					display: none;
+				}
+			}
+
+			.mm-navbar_tabs span {
+				display: inline-block;
+				margin-left: 8px;
+			}
+			@media (max-width: 450px) {
+				.mm-navbar_tabs span {
+					display: none;
+				}
+			}
+		</style>
+        <link rel="stylesheet" href="<%= Page.ResolveClientUrl("~/vendor/jquery-ui/jquery-ui.min.css")%>">
+	    <script src="<%= Page.ResolveClientUrl("~/vendor/jquery/jquery.js")%>"></script>
+
+        <link rel="stylesheet" href="<%= Page.ResolveClientUrl("~/vendor/peeka/css/jquery.peekabar.min.css")%>">
+        <script src="<%= Page.ResolveClientUrl("~/vendor/peeka/js/jquery.peekabar.min.js")%>"></script>
+                <script type="text/javascript">
+            $(window).load(function() {
+	           $(".loader").fadeOut("fast");
+            })
+		 </script>
+		 
+<style>
+.loader 
+{
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background: url('<%= Page.ResolveUrl("~/images/loader2.gif")%>') 50% 50% no-repeat rgb(249,249,249);
+}
+</style>
+		<script type="text/javascript">
+		function promptmev2(promptmessage)
+		{
+		alert(promptmessage);
+		}		
+		function selecttab(tabname)
+		{
+                   $('#tabselect').val(tabname);
+                   alert($('#tabselect').val());
+		}
+		function promptme(promptmessage,navpageto)
+		{
+		var bar = new $.peekABar({
+		cssClass: 'promptmessage',
+		delay: 2000,
+		backgroundColor: '#0288d1',
+		autohide: true,
+		position: 'bottom',
+		onHide: function() {
+         location.href=navpageto;
+         }
+		});
+        bar.show({
+           html: promptmessage
+        });		
+		}
+		function alertme(promptmessage)
+		{
+		var bar = new $.peekABar({
+		cssClass: 'promptalert',
+		delay: 2000,
+		backgroundColor: 'red',
+		autohide: true,
+		position: 'bottom'
+		});
+        bar.show({
+           html: promptmessage
+        });		
+		}
+		function informme(promptmessage)
+		{
+		var bar = new $.peekABar({
+		cssClass: 'promptmessage',
+		delay: 2000,
+		backgroundColor: '#1ba1e2',
+		autohide: true,
+		position: 'bottom'
+		});
+        bar.show({
+           html: promptmessage
+        });		
+		}	
+		 </script>
+
+		   <asp:ContentPlaceHolder ID="head" runat="server">  
+    
+           </asp:ContentPlaceHolder>  
+	</head>
+	<body>
+        <!--#include File="navbar.aspx"-->	    
+
+		<asp:ContentPlaceHolder ID="topbody" runat="server">  
+    
+        </asp:ContentPlaceHolder>  
+
+	    <div class="loader">	    
+	    <center><img src="<%=Page.ResolveClientUrl("~/images/officeoneax.png")%>" style="top:30%" /></center>
+       </div>
+       <div style="min-height:80px">&nbsp;</div>  
+       <asp:ContentPlaceHolder ID="body" runat="server">
+
+       </asp:ContentPlaceHolder> 	       
+		<div id="page">
+			<div class="page-content">
+                <asp:ContentPlaceHolder ID="ContentArea" runat="server">  
+                  
+                </asp:ContentPlaceHolder>
+			</div>
+		</div>
+		
+		<input type="hidden" runat="server" id="tabselect"  />              
+
+		
+    <!-- JS -->
+    <script src="<%= Page.ResolveClientUrl("~/vendor/jquery-ui/jquery-ui.min.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/vendor/jquery-validation/dist/jquery.validate.min.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/vendor/jquery-validation/dist/additional-methods.min.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/js/main.js")%>"></script>		
+    <script src="<%= Page.ResolveClientUrl("~/vendor/fab/js/kc.fab.min.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/js/materialize.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/js/init.js")%>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/vendor/colorbox/js/jquery.colorbox.js")%>"></script>
+
+   <asp:ContentPlaceHolder ID="foot" runat="server">  
+   
+   </asp:ContentPlaceHolder>  		
+   
+     <script language="javascript" type="text/javascript">
+    $(document).ready(function(){
+         if ($('#<%=tabselect.clientid%>').val()!="")
+          {
+           $('.tabs').tabs('select',$('#<%=tabselect.clientid%>').val()); 
+           $('#<%=tabselect.clientid%>').val('');
+          }  
+          
+        $('.datepicker').datepicker({format:'dd/mm/yyyy',container:'BODY',showClearBtn:'true',firstDay:1,autoClose:'true'});
+        $('.modal').modal();
+        $('.sidenavright').sidenav({edge: 'right'});        
+      });
+   </script>
+
+     <!--#include File="navbarfoot.aspx"-->	      
+	</body>
+</html>
