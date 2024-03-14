@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" EnableViewState="True" CodeFile="memberpointtranslist.aspx.vb" Inherits="memberpointtranslist_class" MasterPageFile="~/Site.Master" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" EnableViewState="True" CodeFile="membervouchertranslist.aspx.vb" Inherits="membervouchertranslist_class" MasterPageFile="~/Site.Master" %>
 
 <asp:Content ID="ctheader" ContentPlaceHolderID="head" runat="server">
     <%=TableUtils.OveridingTheme()%>
