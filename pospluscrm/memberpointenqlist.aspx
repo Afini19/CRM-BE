@@ -6,7 +6,6 @@
 
 <asp:Content ID="cttopbody" ContentPlaceHolderID="topbody" runat="server">
     <!--#include File="~/navbarl2.aspx"-->
-    memberpointtranslist
     <!--#include File="~/navbarleftsmall.aspx"-->
 </asp:Content>
 
@@ -43,8 +42,8 @@
             <asp:Button ID="eventfire" runat="server" UseSubmitBehavior="false" Style="display: none" OnClick="eventfiresub" />
             <asp:Button ID="eventfirenorm" runat="server" UseSubmitBehavior="false" Style="display: none" OnClick="eventfiresub" />
 
-
-
+            <!--#include File="~/searchmenu/memberpointenq.aspx"-->
+            <!--#include File="~/bottomspacing.aspx"-->
 
         </form>
     </div>
@@ -76,6 +75,10 @@
             });
 
         });
+
+        function triggersearch() {
+            $('#pagesearchoption').sidenav('open');
+        }
 
     </script>
 </asp:Content>
