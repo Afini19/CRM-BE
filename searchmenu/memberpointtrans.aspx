@@ -35,10 +35,14 @@
         </div>
   </li>
   <li>
-      <div class="container">
-         Type :<br />
-         <input type="text" runat="server" id="sbtype" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
-      </div>
+    <div class="container">
+        Type :
+        <select id="sbtype" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
+            <option value="" selected="selected">Please Select</option>
+            <option value="O">Collect</option>
+            <option value="G">Redeem</option>
+        </select>
+    </div>
 </li>
   <li>  
     <div class="container">

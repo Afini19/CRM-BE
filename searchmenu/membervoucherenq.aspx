@@ -28,6 +28,7 @@
      <input type="text" runat="server" id="sbemail" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
   </div>
 </li>
+
 <li>
       <div class="container">
          Voucher Code :<br />
@@ -45,6 +46,31 @@
          Voucher Type :<br />
          <input type="text" runat="server" id="sbvouchertype" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
       </div>
+</li>
+
+<li>  
+  <div class="container">
+      DOB From Date:-<br />
+      <input type="text" runat="server" id="sbdobfromdate" class="datepicker"  style="font-size:0.9rem;background-color:white;text-decoration:none" />
+   </div>
+</li>
+<li>  
+  <div class="container">
+      DOB To Date:-<br />
+      <input type="text" runat="server" id="sbdobtodate" class="datepicker"  style="font-size:0.9rem;background-color:white;text-decoration:none" />
+   </div>
+</li>
+<li>  
+  <div class="container">
+      Join From Date:-<br />
+      <input type="text" runat="server" id="sbjoinfromdate" class="datepicker"  style="font-size:0.9rem;background-color:white;text-decoration:none" />
+   </div>
+</li>
+<li>  
+  <div class="container">
+      Join To Date:-<br />
+      <input type="text" runat="server" id="sbjointodate" class="datepicker"  style="font-size:0.9rem;background-color:white;text-decoration:none" />
+   </div>
 </li>
 
   <li><div>&nbsp;&nbsp;</div></li>   

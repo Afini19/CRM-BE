@@ -35,6 +35,8 @@
 
             </div>
             <br />
+
+            <input type="hidden" id="titleaddon" runat="server" />
             <input type="hidden" id="table1sel0" runat="server" />
             <input type="hidden" id="eventtype2" runat="server" />
             <input type="hidden" id="eventtype" runat="server" />

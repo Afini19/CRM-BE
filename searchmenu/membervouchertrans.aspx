@@ -22,6 +22,24 @@
          <input type="text" runat="server" id="sbmembertype" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
       </div>
 </li>
+    <li>
+        <div class="container">
+           Branch :<br />
+           <input type="text" runat="server" id="sbbranch" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
+           </div>
+        </li>
+  <li>
+        <div class="container">
+           Casher :<br />
+           <input type="text" runat="server" id="sbcasher" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
+        </div>
+  </li>
+  <%--<li>
+      <div class="container">
+         Type :<br />
+         <input type="text" runat="server" id="sbtype" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
+      </div>
+</li>--%>
 <li>
       <div class="container">
          Voucher Code :<br />
@@ -35,28 +53,24 @@
       </div>
 </li>
 <li>
-      <div class="container">
-         Voucher Type :<br />
-         <input type="text" runat="server" id="sbvouchertype" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
-      </div>
+    <div class="container">
+        Voucher Type :<br />
+        <select id="sbvouchertype" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
+            <option value="" selected="selected">Please Select</option>
+            <option value="N">Product Voucher</option>
+            <option value="C">Cash Voucher</option>
+        </select>
+    </div>
 </li>
-    <li>
-        <div class="container">
-           Branch :<br />
-           <input type="text" runat="server" id="sbbranch" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
-           </div>
-        </li>
-  <li>
-        <div class="container">
-           Casher :<br />
-           <input type="text" runat="server" id="sbcasher" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
-        </div>
-  </li>
-  <li>
-      <div class="container">
-         Type :<br />
-         <input type="text" runat="server" id="sbtype" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
-      </div>
+<li>
+    <div class="container">
+        Status :<br />
+        <select id="sbstatus" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
+            <option value="" selected="selected">Please Select</option>
+            <option value="unused">Unused</option>
+            <option value="used">Used</option>
+        </select>
+    </div>
 </li>
   <li>  
     <div class="container">

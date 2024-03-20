@@ -50,6 +50,26 @@ Public Class WebSearchMemberPointEnquiry
         Return "ml_email = '" + theValue.Replace("'", "''") + "'"
     End Function
 
+    Public Function DOBDate(ByVal theDatainYYYYMMDD As String, ByVal theValue As String, Optional ByVal SearchAccuracy As Integer = 1, Optional ByVal OverrideOperator As String = "")
+
+        If (String.Compare(OverrideOperator.Trim(), "", False) <> 0) Then
+            Return (" datediff(d,'" + theDatainYYYYMMDD + "',ml_dob) " + OverrideOperator + " " + theValue.Replace("'", "''")) + ""
+        End If
+
+        Return (" datediff(d,'" + theDatainYYYYMMDD + "',ml_dob) = " + theValue.Replace("'", "''")) + ""
+
+    End Function
+
+    Public Function JoinDate(ByVal theDatainYYYYMMDD As String, ByVal theValue As String, Optional ByVal SearchAccuracy As Integer = 1, Optional ByVal OverrideOperator As String = "")
+
+        If (String.Compare(OverrideOperator.Trim(), "", False) <> 0) Then
+            Return (" datediff(d,'" + theDatainYYYYMMDD + "',ml_createdt) " + OverrideOperator + " " + theValue.Replace("'", "''")) + ""
+        End If
+
+        Return (" datediff(d,'" + theDatainYYYYMMDD + "',ml_createdt) = " + theValue.Replace("'", "''")) + ""
+
+    End Function
+
     Public Sub LogtheAudit(ByVal theMessage As String)
         Dim strFile As String = "c:\officeonelog\ErrorLogCRM.txt"
         Dim fileExists As Boolean = File.Exists(strFile)

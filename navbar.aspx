@@ -30,15 +30,15 @@
     <li><a href="<%=Page.ResolveClientUrl("~/pospluscrm/Membereventvoucherlist.aspx")%>" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Event Based Voucher Settings</a></li> 
     <li><a href="<%=Page.ResolveClientUrl("~/pospluscrm/MembereventCategorylistme.aspx")%>" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Event Based Point Settings</a></li>  
     <li><div class="divider"></div></li>    
-    <li><a href="#" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>e-Menu Setup</a></li>
+    <%--<li><a href="#" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>e-Menu Setup</a></li>
     <li><a href="#" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Event Code Admin</a></li>     
     <li><a href="#" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Manual Voucher Issue</a></li> 
     <li><a href="#"  class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Details</a></li>
-    <li><a href="#" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Dashboard</a></li>
-    <li><a href="<%=Page.ResolveClientUrl("~/pospluscrm/memberpointtranslist.aspx")%>" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Points Transaction</a></li>
-    <li><a href="<%=Page.ResolveClientUrl("~/pospluscrm/membervouchertranslist.aspx")%>" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Voucher Trans.</a></li>  
+    <li><a href="#" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Dashboard</a></li>--%>
     <li><a href="<%=Page.ResolveClientUrl("~/pospluscrm/memberpointenqlist.aspx")%>" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Points Enquiry</a></li>  
     <li><a href="<%=Page.ResolveClientUrl("~/pospluscrm/membervoucherenqlist.aspx")%>" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Voucher Enquiry</a></li>  
+    <li><a href="<%=Page.ResolveClientUrl("~/pospluscrm/memberpointtranslist.aspx")%>" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Points Transaction</a></li>
+    <li><a href="<%=Page.ResolveClientUrl("~/pospluscrm/membervouchertranslist.aspx")%>" class="waves-effect" style="text-decoration:none;color:white"><i class="material-icons" style="color:white">folder</i>Member Voucher Trans.</a></li>  
   </ul>
 
   <ul id="pagefav" class="sidenavright sidenav" style="background-color:white;">
