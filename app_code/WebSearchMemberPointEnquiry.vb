@@ -50,13 +50,9 @@ Public Class WebSearchMemberPointEnquiry
         Return "ml_email = '" + theValue.Replace("'", "''") + "'"
     End Function
 
-    Public Function DOBDate(ByVal theDatainYYYYMMDD As String, ByVal theValue As String, Optional ByVal SearchAccuracy As Integer = 1, Optional ByVal OverrideOperator As String = "")
+    Public Function DOBMonth(ByVal theMonthFrom As Integer, ByVal theMonthTo As Integer, Optional ByVal SearchAccuracy As Integer = 1, Optional ByVal OverrideOperator As String = "")
 
-        If (String.Compare(OverrideOperator.Trim(), "", False) <> 0) Then
-            Return (" datediff(d,'" + theDatainYYYYMMDD + "',ml_dob) " + OverrideOperator + " " + theValue.Replace("'", "''")) + ""
-        End If
-
-        Return (" datediff(d,'" + theDatainYYYYMMDD + "',ml_dob) = " + theValue.Replace("'", "''")) + ""
+        Return ("(MONTH(ml_dob) BETWEEN " + theMonthFrom.ToString() + " AND " + theMonthTo.ToString() + ")")
 
     End Function
 

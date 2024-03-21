@@ -28,16 +28,45 @@
      <input type="text" runat="server" id="sbemail" runat="server" style="font-size:0.9rem;background-color:white; text-decoration:none" />
   </div>
 </li>
-<li>  
+ <li>  
   <div class="container">
-      DOB From Date:-<br />
-      <input type="text" runat="server" id="sbdobfromdate" class="datepicker"  style="font-size:0.9rem;background-color:white;text-decoration:none" />
+      DOB Month From:-<br />
+      <select id="sbdobmonthfrom" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
+        <option value="" selected="selected">Please Select</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
    </div>
 </li>
+
 <li>  
   <div class="container">
-      DOB To Date:-<br />
-      <input type="text" runat="server" id="sbdobtodate" class="datepicker"  style="font-size:0.9rem;background-color:white;text-decoration:none" />
+      DOB Month To:-<br />
+      <select id="sbdobmonthto" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
+        <option value="" selected="selected">Please Select</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
    </div>
 </li>
 <li>  

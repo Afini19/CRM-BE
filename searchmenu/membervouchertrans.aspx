@@ -61,17 +61,6 @@
             <option value="C">Cash Voucher</option>
         </select>
     </div>
-</li>
-<li>
-    <div class="container">
-        Status :<br />
-        <select id="sbstatus" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
-            <option value="" selected="selected">Please Select</option>
-            <option value="unused">Unused</option>
-            <option value="used">Used</option>
-        </select>
-    </div>
-</li>
   <li>  
     <div class="container">
         Transaction From Date:-<br />

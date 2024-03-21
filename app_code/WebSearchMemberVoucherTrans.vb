@@ -95,19 +95,6 @@ Public Class WebSearchMemberVoucherTrans
         Return "vo_type = '" + theValue.Replace("'", "''") + "'"
     End Function
 
-    Public Function Status(ByVal theValue As String, Optional ByVal SearchAccuracy As Integer = 1) As String
-
-        If theValue = "unused" Then
-            Return "mv_status IS NULL"
-        End If
-
-        If (SearchAccuracy = 1) Then
-            Return "mv_status like '%" + theValue.Replace("'", "''") + "%'"
-        End If
-
-        Return "mv_status = '" + theValue.Replace("'", "''") + "'"
-    End Function
-
     Public Function TransDate(ByVal theDatainYYYYMMDD As String, ByVal theValue As String, Optional ByVal SearchAccuracy As Integer = 1, Optional ByVal OverrideOperator As String = "")
 
         If (String.Compare(OverrideOperator.Trim(), "", False) <> 0) Then
