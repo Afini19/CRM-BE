@@ -32,8 +32,7 @@
   <div class="container">
       DOB Month From:-<br />
       <select id="sbdobmonthfrom" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
-        <option value="" selected="selected">Please Select</option>
-        <option value="1">January</option>
+        <option value="1" selected="selected">January</option>
         <option value="2">February</option>
         <option value="3">March</option>
         <option value="4">April</option>
@@ -53,7 +52,6 @@
   <div class="container">
       DOB Month To:-<br />
       <select id="sbdobmonthto" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
-        <option value="" selected="selected">Please Select</option>
         <option value="1">January</option>
         <option value="2">February</option>
         <option value="3">March</option>
@@ -65,7 +63,7 @@
         <option value="9">September</option>
         <option value="10">October</option>
         <option value="11">November</option>
-        <option value="12">December</option>
+        <option value="12" selected="selected">December</option>
       </select>
    </div>
 </li>
