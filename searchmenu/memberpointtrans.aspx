@@ -39,8 +39,8 @@
         Type :
         <select id="sbtype" runat="server" style="font-size: 0.9rem; background-color: white; text-decoration: none;">
             <option value="" selected="selected">Please Select</option>
-            <option value="O">Collect</option>
-            <option value="G">Redeem</option>
+            <option value="O">Redeem</option>
+            <option value="G">Collect</option>
         </select>
     </div>
 </li>
